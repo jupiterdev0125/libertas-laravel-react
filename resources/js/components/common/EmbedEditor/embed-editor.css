@@ -1,0 +1,87 @@
+.embed-editor {
+    display: grid;
+    grid-template-columns: minmax(10px, auto) 5fr 5fr;
+    grid-template-rows: minmax(10px, auto) 11fr;
+}
+
+.embed-editor h2 {
+    font-weight: 600;
+}
+
+.embed-editor-control {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 5fr;
+}
+
+.embed-editor-control button {
+    margin: 0.25rem;
+}
+
+.embed-fields {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.edit-area {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.discord-preview {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+@media (max-width: 992px) {
+    .embed-editor-control button {
+        width: auto !important;
+    }
+
+    .embed-editor-control {
+        display: grid;
+        grid-template-columns: 0 1fr 1fr 0;
+    }
+
+    .embed-editor {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .embed-fields-heading {
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .embed-fields {
+        position: static;
+        padding-right: 0;
+        padding-bottom: 3rem;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .edit-area {
+        padding-right: 0;
+        padding-left: 0;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .discord-preview-heading {
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .discord-preview {
+        position: static;
+        padding-right: 0;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+}

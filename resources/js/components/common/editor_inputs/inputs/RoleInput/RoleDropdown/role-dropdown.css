@@ -1,0 +1,24 @@
+.role-dropdown {
+    max-height: 15rem;
+    border-radius: 0;
+    background-color: #2f3136;
+}
+
+.role-dropdown input {
+    border-radius: 0;
+}
+
+.role-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+}
+
+a.role-item {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.role-item:hover {
+    font-weight: 600;
+}

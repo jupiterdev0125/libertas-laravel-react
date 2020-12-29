@@ -1,0 +1,1063 @@
+html {
+    height: 100%;
+}
+
+* {
+    outline: none;
+}
+
+body {
+    color: $libertas-white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 100%;
+}
+
+.libertas-green {
+    color: $libertas-green;
+}
+
+.libertas-green-new {
+    color: $libertas-green-new;
+}
+
+.libertas-orange {
+    color: $libertas-orange;
+}
+
+.libertas-orange-new {
+    color: $libertas-orange-new;
+}
+
+.content {
+    flex: 1 0 auto;
+    overflow-x: inherit;
+}
+
+.input-min-height {
+    min-height: 50px;
+}
+
+.server-stats-card {
+    h5 {
+        font-weight: 600;
+    }
+
+    h4 {
+        font-weight: 600;
+        color: $libertas-green;
+    }
+}
+
+.about {
+    h3 {
+        font-size: 2rem;
+    }
+
+    span {
+        font-size: 1.3rem;
+        color: $libertas-white;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 1.8rem;
+        color: $libertas-light-grey;
+        font-weight: 400;
+    }
+
+    img {
+        @include transition();
+    }
+
+    img:hover {
+        @include scale();
+    }
+}
+
+.active-subscription {
+    th {
+        width: 40%;
+        border-top: 0 solid;
+        color: $libertas-white;
+    }
+
+    td {
+        width: 60%;
+        border-top: 0 solid;
+        color: $libertas-white;
+    }
+}
+
+/* Checkout & build */
+.plan-section {
+    span {
+        color: $libertas-green;
+    }
+}
+
+.your-plan {
+    background-color: $libertas-light-black;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+/* Standard values */
+.vertical-middle {
+    vertical-align: middle;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1 {
+    font-size: $h1-large;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.title {
+    a,
+    p {
+        font-size: $h1-large;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    a.dropdown-item {
+        font-size: 1rem;
+        text-transform: none;
+        font-weight: 400;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+}
+
+.no-caps p {
+    text-transform: none !important;
+}
+
+.caps p,
+.caps span {
+    text-transform: uppercase !important;
+}
+
+.h-100v {
+    height: 90vh;
+    margin-top: -12.5vh;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+input {
+    color: $libertas-dark-grey !important;
+}
+
+/* Dashboard page */
+.server-card {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    @include transition();
+
+    .logo {
+        border-radius: 50%;
+    }
+
+    p {
+        margin-bottom: 0;
+        color: $libertas-black;
+    }
+
+    span {
+        margin-bottom: 0;
+        color: $libertas-white;
+        font-weight: 600;
+    }
+
+    h3 {
+        padding-top: 0.5rem;
+        color: $libertas-darker-orange;
+    }
+}
+
+/* Plugin page */
+.plugin-card {
+    @include transition();
+}
+
+.plugin-card:hover {
+    @include scale();
+    @include transition();
+}
+
+.premium-feature {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.plugin-card:hover .premium-standard {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.plugin-card:hover .premium-feature {
+    visibility: visible;
+    opacity: 1;
+}
+
+.enabled {
+    border-radius: 1rem;
+    background-color: $libertas-light-black;
+    height: 100%;
+}
+
+.disabled {
+    border-radius: 1rem;
+    background-color: $libertas-light-black;
+    opacity: 0.6;
+}
+
+.command-divider {
+    hr {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* Individual plugin pages */
+.embed-color-big {
+    width: 80px;
+    height: 3rem;
+    background: transparent;
+    border: 0;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.plugin-section {
+    p {
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+
+.add-buttons {
+    p {
+        text-transform: uppercase;
+        padding-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    span {
+        color: $libertas-green;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        width: 100%;
+        left: 0;
+    }
+}
+
+.card {
+    background-color: $libertas-light-black;
+    color: $libertas-white;
+    border-radius: 2rem !important;
+
+    p {
+        color: $libertas-white;
+        text-decoration: none;
+    }
+
+    p:hover {
+        color: $libertas-white;
+        text-decoration: none;
+    }
+
+    p:focus {
+        text-decoration: none;
+    }
+
+    .flipbook-colored {
+        background-color: $libertas-black;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn-upload {
+        background-color: $discord-background;
+    }
+
+    .btn-upload-light {
+        background-color: #36393e;
+        color: white;
+    }
+
+    .card-header {
+        border-bottom: none;
+    }
+
+    .card-header.active {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    &.card-smaller-radius {
+        border-radius: 1rem !important;
+    }
+}
+
+.no-scrollbar {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+}
+
+.premium {
+    background-color: $libertas-light-black;
+    border-radius: 2rem;
+    height: 300px;
+}
+
+.premium:hover .premium-buttons {
+    display: none;
+}
+
+.premium-pop {
+    display: none;
+
+    padding: 0 0.5rem;
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.premium:hover .premium-pop {
+    display: block;
+}
+
+.flipbook-colored {
+    background-color: $libertas-light-black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .form-control {
+        background-color: $libertas-black;
+    }
+
+    .btn-upload {
+        background-color: $libertas-black;
+    }
+
+    .btn-upload-light {
+        background-color: #36393e;
+        color: white;
+    }
+
+    .premium {
+        background-color: $libertas-black;
+    }
+}
+
+.upload,
+.saved {
+    span {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: $libertas-light-green;
+    }
+}
+
+@media (max-width: $small-device-width) {
+    h1,
+    .h1 {
+        font-size: 1.375rem;
+    }
+
+    .sm-text-center {
+        text-align: center !important;
+    }
+
+    .md-text-center {
+        text-align: center;
+    }
+
+    .md-text-center {
+        text-align: center !important;
+    }
+
+    .about {
+        span {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .text-about-l,
+    .text-about-r {
+        text-align: center;
+    }
+
+    .server-card {
+        padding: 0;
+
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .premium {
+        height: 190px;
+    }
+
+    .disabled,
+    .enabled {
+        height: 150px;
+    }
+
+    .premium-feature {
+        margin-top: -250px;
+    }
+
+    .add-buttons {
+        .disabled,
+        .enabled {
+            height: 150px;
+        }
+
+        .premium-feature {
+            margin-top: -150px;
+        }
+    }
+
+    .plugin-card {
+        p,
+        a {
+            margin-bottom: 0;
+            text-transform: uppercase;
+            color: $libertas-white;
+            text-decoration: none;
+        }
+
+        span {
+            color: $libertas-green;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+    }
+
+    button {
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .your-plan {
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-bottom: 4rem;
+    }
+
+    .card-body {
+        .ml-2 {
+            margin-top: 0;
+        }
+
+        .btn-enabled,
+        .btn-disabled {
+            width: 6rem;
+        }
+
+        .non-premium,
+        .premium {
+            .btn-disabled,
+            .btn-enabled {
+                width: 7rem;
+            }
+        }
+    }
+
+    .embed-color-big {
+        width: 90px;
+        height: 55px;
+        margin-right: 0;
+    }
+
+    .colorpicker label {
+        width: 13px !important;
+        height: 13px !important;
+    }
+
+    .field {
+        input {
+            width: 100%;
+            float: right;
+        }
+    }
+}
+
+@media (min-width: $small-device-width) {
+    .sm-text-center {
+        text-align: center !important;
+    }
+
+    .md-text-center {
+        text-align: center !important;
+    }
+
+    .h-100v {
+        padding-top: 11rem;
+        padding-bottom: 4rem;
+        height: auto;
+    }
+
+    .about {
+        span {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .text-about-l,
+    .text-about-r {
+        text-align: center;
+    }
+
+    .server-card {
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .premium {
+        height: 140px;
+    }
+
+    .disabled,
+    .enabled {
+        height: 150px;
+    }
+
+    .premium-feature {
+        margin-top: -150px;
+    }
+
+    .plugin-card {
+        p,
+        a {
+            margin-bottom: 0;
+            text-transform: uppercase;
+            color: $libertas-white;
+            text-decoration: none;
+        }
+
+        span {
+            color: $libertas-green;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .your-plan {
+        margin-left: -15px;
+        margin-bottom: 4rem;
+    }
+
+    .field {
+        input {
+            width: 85%;
+            float: right;
+        }
+
+        p {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: $phone-width) {
+    .sm-text-center {
+        text-align: left !important;
+    }
+
+    .text-right {
+        text-align: right !important;
+    }
+
+    .md-m-bot-1 {
+        margin-bottom: 1rem;
+    }
+
+    .about {
+        span {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .text-about-l {
+        text-align: left;
+    }
+
+    .text-about-r {
+        text-align: right;
+    }
+
+    .server-card {
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .plugins {
+        .disabled,
+        .enabled {
+            height: 200px;
+        }
+    }
+
+    .plugin-card {
+        p,
+        a {
+            margin-bottom: 0;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: $libertas-white;
+            text-decoration: none;
+        }
+
+        span {
+            color: $libertas-green;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .add-buttons {
+        p {
+            font-size: 0.9rem;
+        }
+
+        span {
+            font-size: 0.7rem;
+        }
+    }
+
+    .field {
+        input {
+            width: 91%;
+            float: right;
+        }
+
+        p {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .md-text-center {
+        text-align: left !important;
+    }
+
+    .lg-text-right {
+        text-align: right !important;
+    }
+
+    .about {
+        span {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+
+    .server-card {
+        .logo {
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .premium {
+        height: 300px;
+    }
+
+    .disabled,
+    .enabled {
+        height: 150px;
+    }
+
+    .plugins {
+        .disabled,
+        .enabled {
+            height: 150px;
+        }
+    }
+
+    .premium-feature {
+        margin-top: -150px;
+    }
+
+    .plugin-card {
+        p,
+        a {
+            font-size: 0.9rem;
+            color: $libertas-white;
+            text-decoration: none;
+        }
+
+        span {
+            font-size: 0.8rem;
+        }
+    }
+
+    .add-buttons {
+        p {
+            font-size: 0.7rem;
+        }
+
+        span {
+            font-size: 0.5rem;
+        }
+    }
+
+    .your-plan {
+        margin-left: 1rem;
+        margin-bottom: unset;
+    }
+}
+
+@media (min-width: $small-desktop-width) {
+    .plugin-card {
+        p {
+            font-size: 1rem;
+        }
+
+        span {
+            font-size: 0.8rem;
+        }
+    }
+
+    .add-buttons {
+        p {
+            font-size: 0.9rem;
+        }
+
+        span {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+.hidden-all-except-ie {
+    display: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .thanks-ie {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .hidden-all-except-ie {
+        display: block;
+        background-color: red;
+        color: $libertas-white;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+input.embed-color-big {
+    @include transition();
+}
+
+input.embed-color-big:focus {
+    border-color: transparent;
+    outline: none;
+}
+
+input.embed-color-big:hover {
+    @include transition();
+    @include scale();
+}
+
+input[type='radio'] {
+    display: none;
+
+    &:checked + label {
+        span {
+            transform: scale(1.25);
+        }
+
+        @each $name, $value in $colors {
+            .#{$name} {
+                border: 2px solid lighten($value, 10%);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                transform: scale(1.2);
+                @include transition();
+            }
+        }
+    }
+}
+
+.colorpicker {
+    .row1 {
+        label {
+            display: inline-block;
+        }
+    }
+
+    label {
+        width: 17px;
+        height: 17px;
+        margin-right: 10px;
+        cursor: pointer;
+        margin-bottom: 0;
+
+        &:hover {
+            span {
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                transform: scale(1.2);
+                @include transition();
+            }
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.2s ease-in-out;
+            border-radius: 0.2rem;
+
+            @each $name, $value in $colors {
+                &.#{$name} {
+                    background: $value;
+                }
+            }
+        }
+    }
+}
+
+.title p {
+    font-size: 1.375rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.btn-remove:hover {
+    cursor: pointer;
+}
+
+#alerts {
+    width: 100%;
+}
+
+// Eddys Emoji Picker
+
+.emoji-picker {
+    width: 385px;
+    height: 86%;
+    overflow: auto;
+    background-color: #34363b;
+    color: white;
+    padding: 0 10px 10px;
+    display: inline-block;
+    box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #2e3338;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #202225;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #adadad;
+    }
+
+    p {
+        font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(185, 187, 190);
+        margin-bottom: 0.2em;
+        clear: left;
+        padding: 15px 0 0;
+    }
+
+    .emoji-item {
+        height: 32px;
+        width: 32px;
+        padding: 4px;
+        float: left;
+        box-sizing: content-box;
+
+        &:hover {
+            background-color: #4f545c;
+            border-radius: 4px;
+        }
+    }
+}
+
+.emoji-dropdown {
+    width: 429px;
+    height: 350px;
+    background-color: #34363b;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: unset;
+    line-height: 1em;
+    position: absolute;
+    z-index: 10;
+
+    input {
+        height: 30px;
+        border: none;
+        background-color: #34363b;
+    }
+
+    img {
+        vertical-align: unset;
+    }
+
+    .menubar {
+        background-color: #202225;
+        padding: 10px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+}
+
+%remove-focus-dark {
+    &:focus {
+        background-color: #2f3136;
+        box-shadow: none;
+        color: white !important;
+    }
+}
+
+%remove-focus-light-dark {
+    &:focus {
+        background-color: #36393e;
+        box-shadow: none;
+        color: white !important;
+    }
+}
+
+.text-area-dark {
+    @extend %remove-focus-dark;
+    background: #2f3136;
+    color: white;
+    border: none;
+    min-height: 7rem;
+}
+
+.text-area-light-dark {
+    @extend %remove-focus-light-dark;
+    background: #36393e;
+    color: white;
+    border: none;
+    min-height: 7rem;
+}
+
+.input-text-dark {
+    @extend %remove-focus-dark;
+
+    background: #2f3136;
+    color: white !important;
+    border: none;
+}
+
+.input-text-light-dark {
+    @extend %remove-focus-light-dark;
+
+    background: #36393e;
+    color: white !important;
+    border: none;
+}
+
+.legend-text {
+    background: #2f3136;
+    padding: 0.1rem 0.5rem;
+    font-family: 'Source Sans Pro', monospace;
+}
+
+.legend-small {
+    padding-left: 0.5rem;
+}
+
+.selected-color-check-mark {
+    position: relative;
+    top: -1.4rem;
+    font-size: xx-small;
+    left: 0.25rem;
+}

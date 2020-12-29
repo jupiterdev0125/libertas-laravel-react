@@ -1,0 +1,88 @@
+.nav-logo {
+    height: 10.5rem;
+}
+
+.navbar-dark {
+    background-color: transparent !important;
+    margin-top: 1rem;
+    padding: 0 3rem 0 3rem;
+
+    .navbar-toggler,
+    .navbar-toggler:focus {
+        border-color: transparent;
+        outline: none;
+    }
+}
+
+.active a.nav-link {
+    color: $libertas-green !important;
+    font-weight: 600;
+    padding-right: 1rem;
+}
+
+a.nav-link {
+    font-size: $nav-bar-large;
+    color: $libertas-white !important;
+    @include transition();
+}
+
+a.nav-link:hover {
+    color: $libertas-green !important;
+    @include transition();
+}
+
+.dropdown-menu {
+    top: 80% !important;
+}
+
+.dropdown-item {
+    @include transition();
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: $libertas-white;
+    text-decoration: none;
+    background-color: $libertas-orange;
+}
+
+.dropdown-item:active {
+    color: $libertas-white;
+    text-decoration: none;
+    background-color: $libertas-green;
+}
+
+.dropdown-item-billing:focus,
+.dropdown-item-billing:hover {
+    color: $libertas-white !important;
+    text-decoration: none;
+    background-color: $libertas-green !important;
+}
+
+.dropdown-item-billing:active {
+    color: $libertas-white !important;
+    text-decoration: none;
+    background-color: $libertas-orange !important;
+}
+
+.dropdownserver .dropdown-item:hover {
+    background-color: $libertas-green;
+}
+
+@media (max-width: $small-device-width) {
+    .nav-logo {
+        height: 4.25rem;
+    }
+}
+
+@media (min-width: $small-device-width) {
+    .nav-logo {
+        height: 4.25rem;
+    }
+}
+
+@media (min-width: $phone-width) {
+    .nav-logo {
+        height: 10.5rem;
+    }
+}

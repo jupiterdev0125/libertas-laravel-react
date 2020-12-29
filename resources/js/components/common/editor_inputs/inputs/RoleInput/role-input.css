@@ -1,0 +1,35 @@
+.selected-roles {
+    padding: 0 0 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    border-radius: 0;
+}
+
+.selected-role span {
+    background-color: #8ec5c5;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem 0.2rem 0;
+    margin: 0 0.25rem;
+    color: #fff;
+}
+
+span.role-name {
+    margin-right: 0;
+    padding: 0.2rem;
+}
+
+.selected-role a {
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.selected-roles i {
+    color: #8ec5c5;
+    background-color: #fff;
+    padding: 0 0.2rem;
+    margin: 0.4rem 0.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

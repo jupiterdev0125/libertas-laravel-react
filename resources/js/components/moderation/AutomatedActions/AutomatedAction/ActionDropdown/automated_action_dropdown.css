@@ -1,0 +1,4 @@
+.max-height-dropdown {
+    max-height: 300px;
+    overflow-y: auto;
+}

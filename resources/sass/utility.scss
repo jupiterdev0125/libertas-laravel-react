@@ -1,0 +1,330 @@
+@mixin transition() {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@mixin scale() {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+$button-border-radius: 0.5rem;
+
+/* Buttons */
+
+.btn-view {
+    color: $libertas-white;
+    background-color: $libertas-green;
+    width: $btn-server;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.3rem;
+    border-radius: $button-border-radius;
+    @include transition();
+}
+
+.btn-view:hover {
+    color: $libertas-white;
+    background-color: $libertas-light-green;
+    box-shadow: none;
+    @include scale();
+    @include transition();
+}
+
+.btn-view.disabled,
+.btn-view[disabled],
+fieldset[disabled] .btn-view,
+.btn-view.disabled:hover,
+.btn-view[disabled]:hover,
+fieldset[disabled] .btn-view:hover,
+.btn-view.disabled.active,
+.btn-view[disabled].active,
+fieldset[disabled] .btn-view.active {
+    background-color: $libertas-green;
+}
+
+.btn-add {
+    color: $libertas-light-black;
+    background-color: $libertas-white;
+    width: $btn-server;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.3rem;
+    border-radius: $button-border-radius;
+    @include transition();
+}
+
+.btn-add:hover,
+.btn-add.active {
+    color: $libertas-orange;
+    background-color: $libertas-white;
+    box-shadow: none;
+    @include scale();
+    @include transition();
+}
+
+.btn-add.active {
+    background-image: none;
+}
+
+.btn-add.disabled,
+.btn-add[disabled],
+fieldset[disabled] .btn-add,
+.btn-add.disabled:hover,
+.btn-add[disabled]:hover,
+fieldset[disabled] .btn-add:hover,
+.btn-add.disabled.active,
+.btn-add[disabled].active,
+fieldset[disabled] .btn-add.active {
+    background-color: $libertas-white;
+}
+
+.btn-plugin {
+    background-color: $libertas-green-new;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: $button-border-radius;
+    padding: 0.5rem 1.6rem;
+    font-size: 0.8rem;
+    @include transition();
+    color: $libertas-white;
+}
+
+.btn-plugin:hover,
+.btn-plugin.active {
+    color: $libertas-white;
+    background-color: $libertas-green;
+    box-shadow: none;
+    @include scale();
+    @include transition();
+}
+
+.btn-plugin.active {
+    background-image: none;
+}
+
+.btn-plugin.disabled,
+.btn-plugin[disabled],
+fieldset[disabled] .btn-plugin,
+.btn-plugin.disabled:hover,
+.btn-plugin[disabled]:hover,
+fieldset[disabled] .btn-plugin:hover,
+.btn-plugin.disabled.active,
+.btn-plugin[disabled].active,
+fieldset[disabled] .btn-plugin.active {
+    background-color: $libertas-white;
+}
+
+.btn-disabled {
+    color: $libertas-white;
+    background-color: $libertas-orange-new;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: $button-border-radius;
+    padding: 0.5rem;
+    width: 8.3rem;
+    font-size: 0.8rem;
+    @include transition();
+}
+
+.btn-disabled:hover,
+.btn-disabled.active {
+    color: $libertas-white;
+    background-color: $libertas-light-orange;
+    box-shadow: none;
+    @include scale();
+    @include transition();
+}
+
+.btn-disabled.active {
+    background-image: none;
+}
+
+.btn-disabled.disabled,
+.btn-disabled[disabled],
+fieldset[disabled] .btn-disabled,
+.btn-disabled.disabled:hover,
+.btn-disabled[disabled]:hover,
+fieldset[disabled] .btn-disabled:hover,
+.btn-disabled.disabled.active,
+.btn-disabled[disabled].active,
+fieldset[disabled] .btn-disabled.active {
+    background-color: $libertas-orange;
+}
+
+.btn-enabled {
+    color: $libertas-white;
+    background-color: $libertas-green-new;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: $button-border-radius;
+    padding: 0.5rem;
+    width: 8.3rem;
+    font-size: 0.8rem;
+    @include transition();
+}
+
+.btn-enabled:hover,
+.btn-enabled.active {
+    color: $libertas-white;
+    background-color: $libertas-light-green;
+    box-shadow: none;
+    @include scale();
+    @include transition();
+}
+
+.btn-enabled.active {
+    background-image: none;
+}
+
+.btn-enabled.enabled,
+.btn-enabled[enabled],
+fieldset[enabled] .btn-enabled,
+.btn-enabled.enabled:hover,
+.btn-enabled[enabled]:hover,
+fieldset[enabled] .btn-enabled:hover,
+.btn-enabled.enabled.active,
+.btn-enabled[enabled].active,
+fieldset[enabled] .btn-enabled.active {
+    background-color: $libertas-green;
+}
+
+.btn-upload,
+.btn-upload-light {
+    color: #2f3136;
+    background-color: #a6a6a6;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-size: 0.8rem;
+    @include transition();
+}
+
+.btn-upload:hover,
+.btn-upload.active,
+.btn-upload-light:hover,
+.btn-upload-light.active {
+    box-shadow: none;
+    @include scale();
+    @include transition();
+}
+
+.btn-upload.active,
+.btn-upload-light.active {
+    background-image: none;
+}
+
+.btn-upload.upload,
+.btn-upload[upload],
+.btn-upload-light.upload,
+.btn-upload-light[upload],
+fieldset[upload] .btn-upload,
+fieldset[upload] .btn-upload-light,
+.btn-upload.upload:hover,
+.btn-upload[upload]:hover,
+.btn-upload-light.upload:hover,
+.btn-upload-light[upload]:hover,
+fieldset[upload] .btn-upload:hover,
+fieldset[upload] .btn-upload-light:hover {
+    background-color: $libertas-light-black;
+}
+
+.card {
+    .select-selected {
+        background-color: $libertas-black;
+    }
+
+    .select-items {
+        background-color: $libertas-black;
+    }
+}
+
+input.file {
+    position: relative;
+    text-align: right;
+    -moz-opacity: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.custom-select {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: 0;
+
+    select {
+        display: none;
+    }
+}
+
+.select-selected {
+    background-color: $libertas-light-black;
+    border-radius: 1rem;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: '';
+    top: 14px;
+    right: 10px;
+    border-color: $libertas-light-grey transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent $libertas-light-grey transparent;
+    top: 7px;
+}
+
+.select-items div,
+.select-selected {
+    color: $libertas-dark-grey;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items {
+    background-color: $libertas-light-black;
+    border-radius: 1rem;
+    left: 0;
+    right: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    position: relative;
+    z-index: 900;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+    .btn-disabled,
+    .btn-enabled {
+        width: 7.4rem;
+    }
+}
+
+@media (min-width: $small-desktop-width) {
+    .btn-disabled,
+    .btn-enabled {
+        width: 8rem;
+    }
+}

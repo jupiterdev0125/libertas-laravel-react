@@ -1,0 +1,52 @@
+{
+  "name": "more-cores/laravel-restcord",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://gitlab.com/more-cores/laravel-restcord",
+  "authors": [
+    {
+      "name": "Ben Kuhl",
+      "email": "ben@morecores.games"
+    }
+  ],
+  "support": {
+    "issues": "https://gitlab.com/more-cores/laravel-restcord/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "LaravelRestcord\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.3.0",
+    "illuminate/support": ">=6.0",
+    "illuminate/contracts": ">=6.0",
+    "restcord/restcord": "dev-master",
+    "laravel/socialite": "^4.0 || ^5.0"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^4.0",
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "8.*",
+    "socialiteproviders/discord": "2.*",
+    "codeclimate/php-test-reporter": "^0.4",
+    "satooshi/php-coveralls": "^1.0",
+    "vlucas/phpdotenv": "^3.3"
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelRestcord\\ServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "suggest": {
+    "socialiteproviders/discord": "Bootstraps Restcord's API library with the currently OAuth'd user"
+  }
+}

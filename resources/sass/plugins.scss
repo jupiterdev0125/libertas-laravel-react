@@ -1,0 +1,34 @@
+@media (min-width: $small-device-width) {
+    #dropdownmenuserver {
+        margin-left: 11.5rem !important;
+    }
+}
+
+@media (min-width: $phone-width) {
+    #dropdownmenuserver {
+        margin-left: 1.5rem !important;
+    }
+}
+
+.premium-plugin {
+    display: grid;
+}
+
+.premium-cta,
+.premium-details {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+// if card is not hovered then don't display premium cta
+.premium-cta {
+    display: none;
+}
+
+.premium-plugin:hover .premium-cta {
+    display: block;
+}
+
+.premium-plugin:hover .premium-details {
+    display: none;
+}

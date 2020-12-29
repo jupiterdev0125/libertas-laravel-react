@@ -1,0 +1,69 @@
+$gradient-start: 500px;
+$background-start-color: #ecc78f;
+
+@mixin green-orange-theme-changes() {
+    .btn-add {
+        color: $libertas-green;
+    }
+
+    .active a.nav-link {
+        color: $libertas-darker-orange !important;
+        font-weight: 600;
+    }
+
+    a.nav-link:hover {
+        color: $libertas-darker-orange !important;
+    }
+
+    @media (min-width: $small-desktop-width) {
+        .container {
+            max-width: 1540px !important;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+}
+
+.green-orange-edge {
+    background: linear-gradient(
+            $libertas-green 0,
+            $background-start-color $gradient-start,
+            rgba(0, 0, 0, 0) $gradient-start
+        ),
+        linear-gradient(
+            160deg,
+            $background-start-color $gradient-start,
+            $background-start-color $gradient-start + 1000px,
+            $libertas-dark-orange $gradient-start + 1000px
+        );
+
+    .footer {
+        background-color: $background-start-color;
+    }
+
+    @include green-orange-theme-changes();
+}
+
+.green-orange-no-edge {
+    background: linear-gradient($libertas-green 0px, $background-start-color 500px);
+
+    .server-card:hover {
+        background-color: rgb(119 107 90 / 27%);
+    }
+
+    .server-card {
+        .btn-view {
+            padding: 0.5rem;
+        }
+
+        .btn-add {
+            padding: 0.5rem;
+        }
+    }
+
+    @include green-orange-theme-changes();
+}
+
+.green-grey {
+    background: linear-gradient($libertas-green-new 0%, rgb(65, 68, 74) 700px);
+}

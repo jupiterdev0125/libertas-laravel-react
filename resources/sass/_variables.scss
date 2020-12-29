@@ -1,0 +1,67 @@
+// Body
+$body-bg: #f8fafc;
+
+// Breakpoints
+$small-device-width: 576px;
+$phone-width: 768px;
+$tablet-width: 992px;
+$small-desktop-width: 1200px;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$libertas-white: #ffffff;
+$libertas-green: #8ec5c5;
+$libertas-green-new: #b2ddce;
+$libertas-light-green: #a6dfcd;
+$libertas-dark-orange: #d1a76e;
+$libertas-darker-orange: #b76e0c;
+$libertas-orange: #daa564;
+$libertas-orange-new: #ecc78f;
+$libertas-light-orange: #e8784e;
+$libertas-black: #070d12;
+$libertas-light-black: #2f3136;
+$libertas-light-grey: #9c9c9c;
+$libertas-dark-grey: #737371;
+
+$discord-background: #36393e;
+
+$nav-bar-large: 1.5rem;
+$h1-large: 1.375rem;
+
+$btn-server: 12rem;
+
+$colors: (
+    aqua: #1abc9c,
+    mint: #2ecc71,
+    blue: #3498db,
+    lavender: #9b59b6,
+    pink: #e91e63,
+    yellow: #f1c40f,
+    orange: #e67e22,
+    red: #e74c3c,
+    grey: #95a5a6,
+    aqua-dark: #11806a,
+    mint-dark: #1f8b4c,
+    blue-dark: #206694,
+    lavender-dark: #71368a,
+    pink-dark: #ad1457,
+    yellow-dark: #c27c0e,
+    orange-dark: #a84300,
+    red-dark: #992d22,
+    grey-dark: #979c9f
+);

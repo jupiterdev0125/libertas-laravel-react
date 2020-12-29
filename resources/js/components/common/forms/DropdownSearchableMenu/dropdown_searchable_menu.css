@@ -1,0 +1,16 @@
+.dropdown-no-results {
+    color: white;
+    text-align: center;
+    padding-top: 0.6rem;
+}
+
+.menu-items-container {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+@media (max-height: 500px) {
+    .menu-items-container {
+        max-height: 300px;
+    }
+}

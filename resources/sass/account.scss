@@ -1,0 +1,11 @@
+.account-section {
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.active-subscription {
+    .btn-disabled {
+        width: unset !important;
+    }
+}

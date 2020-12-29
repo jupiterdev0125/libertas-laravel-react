@@ -1,0 +1,25 @@
+.preview-image {
+    position: relative;
+    left: -1.2rem;
+    top: -0.5rem;
+}
+
+.preview-libertas-title {
+    margin-right: 0.2rem;
+    font-weight: 600;
+    color: #b2ddce;
+}
+
+.libertas-bot-label {
+    background: #6c7fce;
+    font-size: 0.6rem;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.3rem;
+    margin-right: 0.2rem;
+}
+
+@media (max-width: 576px) {
+    .preview-logo {
+        display: none;
+    }
+}

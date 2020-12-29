@@ -1,0 +1,20 @@
+.interval-dropdown {
+    max-height: 15rem;
+    border-radius: 0;
+    background-color: #36393e;
+}
+
+.interval-dropdown input {
+    border-radius: 0;
+}
+
+.interval-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+}
+
+a.interval-item {
+    text-decoration: none;
+    cursor: pointer;
+}

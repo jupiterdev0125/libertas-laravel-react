@@ -1,0 +1,207 @@
+.home {
+    height: 90vh;
+
+    .btn-view {
+        border-radius: $button-border-radius;
+        width: 16rem;
+        padding: 1rem 0;
+    }
+
+    .btn-add {
+        border-radius: $button-border-radius;
+        color: $libertas-light-black;
+        width: 16rem;
+        padding: 1rem 0;
+    }
+
+    .btn-add:hover {
+        color: $libertas-black;
+    }
+}
+
+.reviews {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.review-wrapper {
+    height: 200px;
+}
+
+.spacing-logo,
+.spacing-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.blocks {
+    overflow: hidden;
+    width: 100%;
+
+    p {
+        color: #fff !important;
+        margin-bottom: 0;
+    }
+}
+
+.animation .review-blocks {
+    display: inline-block;
+    float: none;
+    background-color: $libertas-light-black;
+    width: 600px;
+    height: 150px;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: $small-device-width) {
+    .review-wrapper {
+        height: 400px;
+    }
+
+    .home {
+        height: 60vh;
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 2rem;
+            letter-spacing: 0.8rem;
+            text-indent: 1rem;
+            font-weight: 900;
+            margin-bottom: 7rem;
+            margin-top: 7rem;
+        }
+
+        .btn-view {
+            width: 15rem;
+            padding: 0.6rem 0;
+        }
+
+        .btn-add {
+            width: 15rem;
+            padding: 0.6rem 0;
+        }
+    }
+
+    .home-button-spacing {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    .animation .review-blocks {
+        height: 400px;
+        width: 300px;
+        padding-top: 3rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: $small-device-width) {
+    .home-button-spacing {
+        margin: 0 1rem;
+    }
+
+    .home {
+        height: 60vh;
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 2rem;
+            text-indent: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 7rem;
+            margin-top: 7rem;
+        }
+
+        .btn-view {
+            width: 12rem;
+            padding: 0.6rem 0;
+        }
+
+        .btn-add {
+            width: 12rem;
+            padding: 0.6rem 0;
+        }
+    }
+
+    .animation .review-blocks {
+        height: 400px;
+        width: 300px;
+        padding-top: 3rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: $phone-width) {
+    .home-button-spacing {
+        margin: 0 2rem;
+    }
+
+    .home {
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 3rem;
+            text-indent: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 7rem;
+            margin-top: 7rem;
+        }
+
+        .btn-view {
+            width: 14rem;
+            padding: 0.6rem 0;
+        }
+
+        .btn-add {
+            width: 14rem;
+            padding: 0.6rem 0;
+        }
+    }
+
+    .animation .review-blocks {
+        height: 200px;
+        width: 600px;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: left;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .home {
+        .btn-view {
+            width: 14rem;
+            padding: 0.6rem 0;
+        }
+
+        .btn-add {
+            width: 14rem;
+            padding: 0.6rem 0;
+        }
+    }
+}
+
+@media (min-width: $small-desktop-width) {
+    .home {
+        height: 90vh;
+
+        h1 {
+            font-size: 8rem;
+            letter-spacing: 5rem;
+            text-indent: 5.8rem;
+            font-weight: 900;
+            margin-bottom: 7rem;
+            margin-top: 7rem;
+        }
+
+        .btn-view {
+            width: 20rem;
+            padding: 1.5rem 1rem;
+        }
+
+        .btn-add {
+            width: 20rem;
+            padding: 1.5rem 1rem;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.packages {
+    a {
+        text-decoration: none;
+        color: unset;
+    }
+}
+
+.pricing-card {
+    @include transition();
+    border-radius: 1rem;
+    background-color: $libertas-light-black;
+    padding: 2rem 1rem;
+    height: 100%;
+
+    .green {
+        color: $libertas-green;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    span {
+        color: $libertas-green;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.pricing-card:hover {
+    @include scale();
+    @include transition();
+}
+
+.faq {
+    p {
+        margin-bottom: 0;
+    }
+}

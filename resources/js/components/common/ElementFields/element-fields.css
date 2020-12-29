@@ -1,0 +1,25 @@
+.element-fields {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.element-field {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 992px) {
+    .element-fields {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    button.element-field {
+        margin: 0.25rem;
+        width: auto !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .element-fields {
+        grid-template-columns: 1fr 1fr;
+    }
+}

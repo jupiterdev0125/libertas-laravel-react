@@ -1,0 +1,12 @@
+.max-height-dropdown {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.customcommands-action-dropdown button {
+    background: white;
+}
+
+.customcommands-dropdown-menu {
+    top: 0 !important;
+}

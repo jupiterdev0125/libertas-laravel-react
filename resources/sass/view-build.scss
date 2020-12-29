@@ -1,0 +1,15 @@
+.plan-building {
+    .select-items div,
+    .select-selected {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: $phone-width) {
+    .plan-building {
+        .select-items div,
+        .select-selected {
+            font-size: 0.9rem;
+        }
+    }
+}

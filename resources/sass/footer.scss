@@ -1,0 +1,55 @@
+.footer {
+    flex-shrink: 0;
+
+    h1 {
+        font-size: 2.5rem;
+        color: $libertas-darker-orange;
+        font-weight: 600;
+        text-transform: none;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        color: $libertas-darker-orange;
+        font-weight: 600;
+    }
+
+    span {
+        font-size: 1.1rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: $libertas-white;
+        @include transition();
+    }
+
+    a:hover {
+        color: $libertas-darker-orange;
+    }
+
+    .fab {
+        @include transition();
+        font-size: 4rem;
+        margin: 10px;
+        color: $libertas-white;
+    }
+
+    .fab:hover {
+        @include scale();
+        @include transition();
+    }
+}
+
+@media (max-width: $small-device-width) {
+    .footer {
+        margin-top: 4rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .mob-bottom-footer {
+        padding-top: 4rem;
+    }
+}
